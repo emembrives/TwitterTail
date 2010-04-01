@@ -1,4 +1,5 @@
-TwitterTail: Python tool to follow in near real-time a Twitter query — Read more  click to e
+TwitterTail: Python tool to follow in near real-time a Twitter query
+
 ------------------
 
 Copyright 2010 Etienne Membrives <etienne@membrives.fr>
@@ -15,3 +16,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+
+------------------
+
+Dependencies:
+ - python-twitter with Search API support (newer than January 9, 2010)
+
