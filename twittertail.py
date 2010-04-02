@@ -95,7 +95,11 @@ class DisplayConsumer(threading.Thread):
     def run(self):
         s="%a, %d %b %Y %H:%M:%S +0000"
         while self.__cont:
+            self.__lock.acquire()
+            if self.__queue.empty():
+                self.__lock.wait()
             elem=self.__queue.get()
+            self.__lock.release()
             #t=time.strptime(elem.created_at,s)
             #print elem.from_user+" ("+time.strftime("%c",t)+")"
             print elem.from_user+" ("+elem.created_at+", "+str(self.__queue.qsize())+")"
