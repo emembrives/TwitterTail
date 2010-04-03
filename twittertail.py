@@ -102,7 +102,7 @@ class DisplayConsumer(threading.Thread):
             self.__lock.release()
             #t=time.strptime(elem.created_at,s)
             #print elem.from_user+" ("+time.strftime("%c",t)+")"
-            print elem.from_user+" ("+elem.created_at+", "+str(self.__queue.qsize())+")"
+            print elem.from_user+" ("+elem.created_at+")"
             print "> "+elem.text.replace('\n',' ').replace('  ',' ').replace('  ',' ')
             self.__queue.task_done()
             if self.__queue.qsize()!=0 and self.__nextrefresh > time.time():
