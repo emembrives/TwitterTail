@@ -31,6 +31,6 @@ Example:
 $> ./twittertail.py twitter
 aguy (Fri, 02 Apr 2010 23:57:17 +0000)
 > TwitterTail is a very nice app
-anotherguy (Fri, 02 Apr 2010 23:57:18 +0000, 98)
+anotherguy (Fri, 02 Apr 2010 23:57:18 +0000)
 > @aguy you're right !
 [... and so on ...]
