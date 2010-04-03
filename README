@@ -22,3 +22,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
 Dependencies:
  - python-twitter with Search API support (newer than January 9, 2010)
 
+Usage:
+./twittertail.py <query> [--delay <seconds>]
+
+To quit, just press CTRL-C at command prompt
+
+Example:
+$> ./twittertail.py twitter
+aguy (Fri, 02 Apr 2010 23:57:17 +0000)
+> TwitterTail is a very nice app
+anotherguy (Fri, 02 Apr 2010 23:57:18 +0000, 98)
+> @aguy you're right !
+[... and so on ...]
